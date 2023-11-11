@@ -1,0 +1,21 @@
+{
+  "name": "vjs-iconator",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "prebuild": "svgo -f./icons -o ./tmp --config ./svgo.config.js",
+    "build": "svg-sprite --config svg-sprite.config.json tmp/*.svg",
+    "postbuild": "svgo -f./vjs-sprite -o ./vjs-sprite --config ./svgo.clean.config.js && rimraf tmp",
+    "sprite": "",
+    "svgo": "",
+    "svgo:xmlns": ""
+  },
+  "keywords": [],
+  "author": "amtins",
+  "license": "MIT",
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "svg-sprite": "^2.0.2",
+    "svgo": "^3.0.3"
+  }
+}
