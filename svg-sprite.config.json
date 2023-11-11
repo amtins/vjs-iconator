@@ -3,6 +3,7 @@
   "dest": ".",
   "mode": {
     "symbol": {
+      "inline": true,
       "sprite": "vjs-sprite-icons.svg",
       "dest": "vjs-sprite",
       "example": { "dest": "index.html" }
