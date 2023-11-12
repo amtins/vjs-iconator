@@ -35,3 +35,7 @@ const player = videojs('my-player', {
   // ...
 });
 ```
+
+## References
+
+This project uses [svgo](https://github.com/svg/svgo) and [svg-sprite](https://github.com/svg-sprite/svg-sprite).
