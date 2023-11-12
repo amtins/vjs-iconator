@@ -1,7 +1,9 @@
 {
   "name": "vjs-iconator",
   "version": "1.0.0",
-  "description": "",
+  "description": "vjs sprite generator",
+  "license": "MIT",
+  "author": "amtins",
   "scripts": {
     "prebuild": "svgo -f./icons -o ./tmp --config ./svgo.config.js",
     "build": "svg-sprite --config svg-sprite.config.json tmp/*.svg",
@@ -9,9 +11,7 @@
     "prestart": "npm run build",
     "start": "http-server -c-1 -o vjs-sprite"
   },
-  "keywords": [],
-  "author": "amtins",
-  "license": "MIT",
+  "keywords": ["svg", "sprite", "icons", "player"],
   "devDependencies": {
     "http-server": "^14.1.1",
     "rimraf": "^5.0.5",
