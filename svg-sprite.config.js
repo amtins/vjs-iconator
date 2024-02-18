@@ -1,5 +1,4 @@
-{
-  "log": "verbose",
+module.exports = {
   "dest": ".",
   "mode": {
     "symbol": {

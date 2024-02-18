@@ -6,7 +6,7 @@
   "author": "amtins",
   "scripts": {
     "prebuild": "svgo -f./icons -o ./tmp --config ./svgo.config.js",
-    "build": "svg-sprite --config svg-sprite.config.json tmp/*.svg",
+    "build": "svg-sprite --config svg-sprite.config.js tmp/*.svg",
     "postbuild": "svgo -f./vjs-sprite -o ./vjs-sprite --config ./svgo.clean.config.js && rimraf tmp",
     "prestart": "npm run build",
     "start": "http-server -c-1 -o vjs-sprite"
